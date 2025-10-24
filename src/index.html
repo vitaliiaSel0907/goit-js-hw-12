@@ -12,33 +12,34 @@
 
     <main>
      
-        <h1 class="title">Image Search</h1>
+      <h1 class="title">Image Search</h1>
 
-      <form id="search-form" class="search-form">
-        <input
-          type="text"
-          name="query"
-          autocomplete="off"
-          placeholder="Search images..."
-          required
-        />
-        <button type="submit">Search</button>
-      </form>
+<form id="search-form" class="form">
+  <input
+    type="text"
+    name="query"
+    autocomplete="off"
+    placeholder="Search images..."
+    required
+  />
+  <button type="submit">Search</button>
+</form>
 
-      <section class="gallery-section">
-        <div id="gallery" class="gallery"></div>
+<section class="gallery-section">
+  <ul id="gallery" class="gallery"></ul>
 
-        <div class="controls">
-          <button id="load-more" class="btn load-more is-hidden">
-            Load more
-          </button>
-          <div id="loader" class="loader is-hidden">Loading…</div>
-        </div>
-      </section>
+  <div class="controls">
+    <button id="load-more" class="btn load-more is-hidden">
+      Load more
+    </button>
+    <span class="loader is-hidden">Loading…</span>
+  </div>
+</section>
+
 
     </main>
 
-    <load src="./partials/footer.html" />
+    
 
     <script type="module" src="./main.js"></script>
   </body>
