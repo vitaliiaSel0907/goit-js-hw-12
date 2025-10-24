@@ -8,12 +8,34 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+     
+        <h1 class="title">Image Search</h1>
+
+      <form id="search-form" class="search-form">
+        <input
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <section class="gallery-section">
+        <div id="gallery" class="gallery"></div>
+
+        <div class="controls">
+          <button id="load-more" class="btn load-more is-hidden">
+            Load more
+          </button>
+          <div id="loader" class="loader is-hidden">Loading…</div>
+        </div>
+      </section>
+
     </main>
 
     <load src="./partials/footer.html" />
